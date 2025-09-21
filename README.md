@@ -230,7 +230,7 @@ Podemos observar que os modelos de forma geral tiveram desempenhos muito parecid
 
 ## 5.5 Salvando os pipelines treinados 
 
-O tempo de processamento dos modelos acima foi em média de 30 minutos, portanto optou-se por salvar os arquivos em outra pasta: 
+O tempo de processamento dos modelos acima foi em média de 30 minutos, portanto optou-se por salvar os arquivos em outra pasta: https://github.com/Frederico-Gribaudi/MVP_Frederico_Gribaudi_Sprint_Machine_Learning/blob/main/models.zip
 
 ## 5.6 Validação 
 
