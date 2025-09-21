@@ -185,41 +185,42 @@ Podemos ver nessa etapa que é possível otimizar os resultados usando os seguin
 
 Foram realizados testes com outros métodos e também realizando padronização e normalização para tentar alcançar uma acurácia maior. Os resultados podem ser encontrados abaixo:
 
-             accuracy  f1_weighted  roc_auc  train_time_s
-modelo                                                   
-LR-orig         0.976        0.976      NaN         0.336
-KNN-orig        0.976        0.976      NaN         0.054
-SVM-orig        0.976        0.976      NaN        33.328
-LR-padr         0.976        0.976      NaN         0.082
-KNN-padr        0.976        0.976      NaN         0.060
-SVM-padr        0.976        0.976      NaN         9.877
-Voting-padr     0.976        0.976      NaN         9.914
-KNN-norm        0.976        0.976      NaN         0.059
-LR-norm         0.976        0.976      NaN         0.137
-SVM-norm        0.976        0.976      NaN         2.635
-Voting-norm     0.976        0.976      NaN         2.842
-RF-norm         0.975        0.975      NaN         7.989
-NB-norm         0.975        0.975      NaN         0.023
-NB-orig         0.975        0.975      NaN         0.020
-Voting-orig     0.975        0.975      NaN        35.241
-NB-padr         0.975        0.975      NaN         0.023
-RF-orig         0.974        0.974      NaN         7.232
-GB-norm         0.974        0.974      NaN        20.527
-GB-padr         0.974        0.974      NaN        20.431
-GB-orig         0.974        0.974      NaN        20.003
-RF-padr         0.974        0.974      NaN         8.014
-ET-orig         0.973        0.973      NaN         1.022
-ET-padr         0.972        0.972      NaN         1.020
-ET-norm         0.972        0.972      NaN         1.050
-Bag-padr        0.971        0.971      NaN        15.243
-Bag-norm        0.970        0.970      NaN        15.233
-Bag-orig        0.969        0.969      NaN        15.957
-Ada-orig        0.965        0.965      NaN         4.994
-Ada-padr        0.965        0.965      NaN         3.988
-Ada-norm        0.965        0.965      NaN         4.024
-CART-norm       0.945        0.945      NaN         0.249
-CART-orig       0.944        0.944      NaN         0.238
-CART-padr       0.943        0.943      NaN         0.258
+| Modelo       | Accuracy | F1 Weighted | ROC AUC | Tempo Treino (s) |
+|--------------|----------|-------------|---------|------------------|
+| LR-orig      | 0.976    | 0.976       | NaN     | 0.336            |
+| KNN-orig     | 0.976    | 0.976       | NaN     | 0.054            |
+| SVM-orig     | 0.976    | 0.976       | NaN     | 33.328           |
+| LR-padr      | 0.976    | 0.976       | NaN     | 0.082            |
+| KNN-padr     | 0.976    | 0.976       | NaN     | 0.060            |
+| SVM-padr     | 0.976    | 0.976       | NaN     | 9.877            |
+| Voting-padr  | 0.976    | 0.976       | NaN     | 9.914            |
+| KNN-norm     | 0.976    | 0.976       | NaN     | 0.059            |
+| LR-norm      | 0.976    | 0.976       | NaN     | 0.137            |
+| SVM-norm     | 0.976    | 0.976       | NaN     | 2.635            |
+| Voting-norm  | 0.976    | 0.976       | NaN     | 2.842            |
+| RF-norm      | 0.975    | 0.975       | NaN     | 7.989            |
+| NB-norm      | 0.975    | 0.975       | NaN     | 0.023            |
+| NB-orig      | 0.975    | 0.975       | NaN     | 0.020            |
+| Voting-orig  | 0.975    | 0.975       | NaN     | 35.241           |
+| NB-padr      | 0.975    | 0.975       | NaN     | 0.023            |
+| RF-orig      | 0.974    | 0.974       | NaN     | 7.232            |
+| GB-norm      | 0.974    | 0.974       | NaN     | 20.527           |
+| GB-padr      | 0.974    | 0.974       | NaN     | 20.431           |
+| GB-orig      | 0.974    | 0.974       | NaN     | 20.003           |
+| RF-padr      | 0.974    | 0.974       | NaN     | 8.014            |
+| ET-orig      | 0.973    | 0.973       | NaN     | 1.022            |
+| ET-padr      | 0.972    | 0.972       | NaN     | 1.020            |
+| ET-norm      | 0.972    | 0.972       | NaN     | 1.050            |
+| Bag-padr     | 0.971    | 0.971       | NaN     | 15.243           |
+| Bag-norm     | 0.970    | 0.970       | NaN     | 15.233           |
+| Bag-orig     | 0.969    | 0.969       | NaN     | 15.957           |
+| Ada-orig     | 0.965    | 0.965       | NaN     | 4.994            |
+| Ada-padr     | 0.965    | 0.965       | NaN     | 3.988            |
+| Ada-norm     | 0.965    | 0.965       | NaN     | 4.024            |
+| CART-norm    | 0.945    | 0.945       | NaN     | 0.249            |
+| CART-orig    | 0.944    | 0.944       | NaN     | 0.238            |
+| CART-padr    | 0.943    | 0.943       | NaN     | 0.258            |
+
 
 <img width="1998" height="599" alt="image" src="https://github.com/user-attachments/assets/309ecb15-c6f9-4979-bddc-59d8c99c1be7" />
 
@@ -236,28 +237,34 @@ O tempo de processamento dos modelos acima foi em média de 30 minutos, portanto
 Independente da propriedade usada para a comparação das matrizes de confusão, seja acurácia ou f1-score, o modelo **SVM-norm** apresentou o melhor resultado para cada atributo, ou seja classifica introvertido, extrovertido e ambivertido sem viéses. 
 
 Melhor modelo por Accuracy: SVM-norm (0.976)
-              precision    recall  f1-score   support
+| Classe       | Precision | Recall | F1-Score | Suporte |
+|--------------|-----------|--------|----------|---------|
+| Ambivertido  | 0.96      | 0.97   | 0.96     | 1315    |
+| Extrovertido | 0.99      | 0.98   | 0.98     | 1371    |
+| Introvertido | 0.98      | 0.98   | 0.98     | 1314    |
 
- ambivertido       0.96      0.97      0.96      1315
-extrovertido       0.99      0.98      0.98      1371
-introvertido       0.98      0.98      0.98      1314
+| Métrica      | Precision | Recall | F1-Score | Suporte |
+|--------------|-----------|--------|----------|---------|
+| Accuracy     | —         | —      | 0.98     | 4000    |
+| Macro Avg    | 0.98      | 0.98   | 0.98     | 4000    |
+| Weighted Avg | 0.98      | 0.98   | 0.98     | 4000    |
 
-    accuracy                           0.98      4000
-   macro avg       0.98      0.98      0.98      4000
-weighted avg       0.98      0.98      0.98      4000
 
 <img width="592" height="455" alt="image" src="https://github.com/user-attachments/assets/2e74d3bd-23b7-4c8b-9360-088ec7f28efd" />
 
 Melhor modelo por F1-weighted: SVM-norm (0.976)
-              precision    recall  f1-score   support
+| Classe       | Precision | Recall | F1-Score | Suporte |
+|--------------|-----------|--------|----------|---------|
+| Ambivertido  | 0.96      | 0.97   | 0.96     | 1315    |
+| Extrovertido | 0.99      | 0.98   | 0.98     | 1371    |
+| Introvertido | 0.98      | 0.98   | 0.98     | 1314    |
 
- ambivertido       0.96      0.97      0.96      1315
-extrovertido       0.99      0.98      0.98      1371
-introvertido       0.98      0.98      0.98      1314
+| Métrica       | Precision | Recall | F1-Score | Suporte |
+|---------------|-----------|--------|----------|---------|
+| Accuracy      | —         | —      | 0.98     | 4000    |
+| Macro Avg     | 0.98      | 0.98   | 0.98     | 4000    |
+| Weighted Avg  | 0.98      | 0.98   | 0.98     | 4000    |
 
-    accuracy                           0.98      4000
-   macro avg       0.98      0.98      0.98      4000
-weighted avg       0.98      0.98      0.98      4000
 
 <img width="592" height="455" alt="image" src="https://github.com/user-attachments/assets/4fb61d71-9c18-4ac7-9d73-3d03b6ec2a78" />
 
