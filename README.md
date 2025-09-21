@@ -106,7 +106,7 @@ A análise dos histogramas e dos boxplot mostram que existem propriedas praticam
 
 * negativa entre *preferência por solidão* ou *confortável ao falar em público* e *gostar de festejar*, logo quando uma tem valor alto, podemos excluir a personalidade da outra, por exemplo, valores altos de *gostar de festejar* implicam em valores baixos de *preferência por solidão*, nesse caso levando a uma personalidade extrovertida.
 
-  # **4) Tratamento de dados**
+# **4) Tratamento de dados**
 
 ## 4.1 Nulos
 
