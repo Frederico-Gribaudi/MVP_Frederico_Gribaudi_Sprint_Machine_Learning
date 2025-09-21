@@ -191,41 +191,42 @@ Podemos ver nessa etapa que é possível otimizar os resultados usando os seguin
 
 Foram realizados testes com outros métodos e também realizando padronização e normalização para tentar alcançar uma acurácia maior. Os resultados podem ser encontrados abaixo:
 
-| Modelo       | Accuracy | F1 Weighted | ROC AUC | Tempo Treino (s) |
-|--------------|----------|-------------|---------|------------------|
-| LR-orig      | 0.976    | 0.976       | NaN     | 0.336            |
-| KNN-orig     | 0.976    | 0.976       | NaN     | 0.054            |
-| SVM-orig     | 0.976    | 0.976       | NaN     | 33.328           |
-| LR-padr      | 0.976    | 0.976       | NaN     | 0.082            |
-| KNN-padr     | 0.976    | 0.976       | NaN     | 0.060            |
-| SVM-padr     | 0.976    | 0.976       | NaN     | 9.877            |
-| Voting-padr  | 0.976    | 0.976       | NaN     | 9.914            |
-| KNN-norm     | 0.976    | 0.976       | NaN     | 0.059            |
-| LR-norm      | 0.976    | 0.976       | NaN     | 0.137            |
-| SVM-norm     | 0.976    | 0.976       | NaN     | 2.635            |
-| Voting-norm  | 0.976    | 0.976       | NaN     | 2.842            |
-| RF-norm      | 0.975    | 0.975       | NaN     | 7.989            |
-| NB-norm      | 0.975    | 0.975       | NaN     | 0.023            |
-| NB-orig      | 0.975    | 0.975       | NaN     | 0.020            |
-| Voting-orig  | 0.975    | 0.975       | NaN     | 35.241           |
-| NB-padr      | 0.975    | 0.975       | NaN     | 0.023            |
-| RF-orig      | 0.974    | 0.974       | NaN     | 7.232            |
-| GB-norm      | 0.974    | 0.974       | NaN     | 20.527           |
-| GB-padr      | 0.974    | 0.974       | NaN     | 20.431           |
-| GB-orig      | 0.974    | 0.974       | NaN     | 20.003           |
-| RF-padr      | 0.974    | 0.974       | NaN     | 8.014            |
-| ET-orig      | 0.973    | 0.973       | NaN     | 1.022            |
-| ET-padr      | 0.972    | 0.972       | NaN     | 1.020            |
-| ET-norm      | 0.972    | 0.972       | NaN     | 1.050            |
-| Bag-padr     | 0.971    | 0.971       | NaN     | 15.243           |
-| Bag-norm     | 0.970    | 0.970       | NaN     | 15.233           |
-| Bag-orig     | 0.969    | 0.969       | NaN     | 15.957           |
-| Ada-orig     | 0.965    | 0.965       | NaN     | 4.994            |
-| Ada-padr     | 0.965    | 0.965       | NaN     | 3.988            |
-| Ada-norm     | 0.965    | 0.965       | NaN     | 4.024            |
-| CART-norm    | 0.945    | 0.945       | NaN     | 0.249            |
-| CART-orig    | 0.944    | 0.944       | NaN     | 0.238            |
-| CART-padr    | 0.943    | 0.943       | NaN     | 0.258            |
+| modelo      | accuracy | f1\_weighted | roc\_auc | train\_time\_s |
+| ----------- | -------- | ------------ | -------- | -------------- |
+| LR-orig     | 0.976    | 0.976        | 0.999    | 0.345          |
+| KNN-orig    | 0.976    | 0.976        | 0.999    | 0.060          |
+| SVM-orig    | 0.976    | 0.976        | 0.999    | 35.173         |
+| LR-padr     | 0.976    | 0.976        | 0.999    | 0.219          |
+| KNN-padr    | 0.976    | 0.976        | 0.999    | 0.067          |
+| SVM-padr    | 0.976    | 0.976        | 0.999    | 8.919          |
+| Voting-padr | 0.976    | 0.976        | NaN      | 10.274         |
+| KNN-norm    | 0.976    | 0.976        | 0.999    | 0.059          |
+| LR-norm     | 0.976    | 0.976        | 0.999    | 0.143          |
+| SVM-norm    | 0.976    | 0.976        | 0.999    | 2.962          |
+| Voting-norm | 0.976    | 0.976        | NaN      | 4.211          |
+| RF-norm     | 0.975    | 0.975        | 0.998    | 7.293          |
+| NB-norm     | 0.975    | 0.975        | 0.999    | 0.023          |
+| NB-orig     | 0.975    | 0.975        | 0.999    | 0.020          |
+| Voting-orig | 0.975    | 0.975        | NaN      | 34.738         |
+| NB-padr     | 0.975    | 0.975        | 0.999    | 0.023          |
+| RF-orig     | 0.974    | 0.974        | 0.998    | 7.934          |
+| GB-norm     | 0.974    | 0.974        | 0.998    | 19.763         |
+| GB-padr     | 0.974    | 0.974        | 0.998    | 19.476         |
+| GB-orig     | 0.974    | 0.974        | 0.998    | 19.945         |
+| RF-padr     | 0.974    | 0.974        | 0.998    | 7.293          |
+| ET-orig     | 0.973    | 0.973        | 0.999    | 1.020          |
+| ET-padr     | 0.972    | 0.972        | 0.999    | 1.018          |
+| ET-norm     | 0.972    | 0.972        | 0.998    | 1.055          |
+| Bag-padr    | 0.971    | 0.971        | 0.998    | 16.522         |
+| Bag-norm    | 0.970    | 0.970        | 0.998    | 15.840         |
+| Bag-orig    | 0.969    | 0.969        | 0.998    | 15.119         |
+| Ada-orig    | 0.965    | 0.965        | 0.987    | 3.965          |
+| Ada-padr    | 0.965    | 0.965        | 0.987    | 4.975          |
+| Ada-norm    | 0.965    | 0.965        | 0.987    | 5.020          |
+| CART-norm   | 0.945    | 0.945        | 0.959    | 0.242          |
+| CART-orig   | 0.944    | 0.944        | 0.958    | 0.236          |
+| CART-padr   | 0.943    | 0.943        | 0.957    | 0.254          |
+
 
 
 <img width="1998" height="599" alt="image" src="https://github.com/user-attachments/assets/309ecb15-c6f9-4979-bddc-59d8c99c1be7" />
