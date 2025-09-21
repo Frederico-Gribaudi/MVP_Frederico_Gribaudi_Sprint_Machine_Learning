@@ -129,12 +129,15 @@ Treino: (16000, 29) | Teste: (4000, 29)
 ## 5.1 Criação do baseline e modelos candidatos
 
 O modelo a ser usado como **baseline simples** é o DummyClassifier e na sequência evoluindo para modelos mais fortes. Os resultados desse primeiro processamento foram: 
-Baseline: 0.342875 (0.000306)
-KNN: 0.996312 (0.001324)
-LR: 0.996562 (0.001459)
-CART: 0.941687 (0.006626)
-NB: 0.997250 (0.001192)
-SVC: 0.997500 (0.001083)
+| Modelo   | Valor    | Desvio Padrão |
+| -------- | -------- | ------------- |
+| Baseline | 0.342875 | 0.000306      |
+| KNN      | 0.996312 | 0.001324      |
+| LR       | 0.996562 | 0.001459      |
+| CART     | 0.941687 | 0.006626      |
+| NB       | 0.997250 | 0.001192      |
+| SVC      | 0.997500 | 0.001083      |
+
 
 <img width="1214" height="913" alt="image" src="https://github.com/user-attachments/assets/b46dd31f-a849-4ce1-92d7-98177dddc26e" />
 
@@ -157,11 +160,14 @@ Treino: (16000, 6) | Teste: (4000, 6)
 
 Os novos resultados dos modelos foram:
 
-KNN: 0.972563 (0.003997)
-LR: 0.975313 (0.002975)
-CART: 0.942438 (0.005806)
-NB: 0.975625 (0.002546)
-SVC: 0.974938 (0.003671)
+| Modelo | Valor    | Desvio Padrão |
+| ------ | -------- | ------------- |
+| KNN    | 0.972563 | 0.003997      |
+| LR     | 0.975313 | 0.002975      |
+| CART   | 0.942438 | 0.005806      |
+| NB     | 0.975625 | 0.002546      |
+| SVC    | 0.974938 | 0.003671      |
+
 
 <img width="1223" height="913" alt="image" src="https://github.com/user-attachments/assets/fd1cc82c-d978-4dda-841f-4e0f829753bb" />
 
